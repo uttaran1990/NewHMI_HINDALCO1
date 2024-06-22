@@ -1,0 +1,128 @@
+Name: NetLogic
+Type: NetLogicCategoryFolder
+Children:
+- Name: EmailSenderLogic
+  Id: g=60995f8921ed2e50919c510855c52230
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Class: Method
+    Name: SendEmail
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"mailToAddress","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"mailSubject","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"mailBody","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: SenderEmailAddress
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "uttaranbhattacharya@gmail.com"
+  - Name: SenderEmailPassword
+    Type: BaseDataVariableType
+    DataType: Password
+    SecretValue: t/J/K5uUNM1YVTU/K7CAMTo64LZIu1kwpmwppg==
+  - Name: SMTPHostname
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "smtp.gmail.com"
+  - Name: SMTPPort
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 587
+  - Name: EnableSSL
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Attachment
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/Report.pdf"
+  - Name: MaxRetriesOnFailure
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DelayBeforeRetry
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:10.0000000"
+  - Name: EmailSendingStatus
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: ClockLogic1
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: Time
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: Year
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Month
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Day
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Hour
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Minute
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Second
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+  - Name: UTCTime
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: Year
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Month
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Day
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Hour
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Minute
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Second
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+- Name: ClockLogic
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: Time
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: UTCTime
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"

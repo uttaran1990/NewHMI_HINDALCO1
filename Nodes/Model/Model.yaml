@@ -1,0 +1,435 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- Name: GContol
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 20
+- Name: Variable2
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 4.340000152587891
+- Name: Variable3
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Rockwell"
+- Name: Variable4
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 50
+- Name: Variable5
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 60
+- Name: String1
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Uttaran"
+- Name: String2
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Subhajit"
+- Name: Motor1
+  Id: g=a7301ab8b2a1f79c1522b7b73243d1ee
+  Type: Motor
+  Children:
+  - Name: Start
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: KeyValueConverter1
+      Type: ValueMapConverter
+      Children:
+      - Name: Source
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: EngineeringUnitConverter1
+          Type: EUConverter
+          Children:
+          - Name: Source
+            Type: BaseDataVariableType
+            DataType: Number
+            ReferenceType: HasSource
+            Value: {"Type":11,"Body":0.0}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../Stop"
+      - Name: Pairs
+        Type: BaseObjectType
+        Children:
+        - Name: Pair
+          Type: ValueMapPair
+          Children:
+          - Name: Key
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+  - Name: Stop
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: On
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Start"
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Motor-01"
+- Name: Motor
+  Id: g=7da8615bd78151a7907c37ec7da2ada1
+  Supertype: BaseObjectType
+  Children:
+  - Name: Start
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: KeyValueConverter1
+      Type: ValueMapConverter
+      Children:
+      - Name: Source
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: EngineeringUnitConverter1
+          Type: EUConverter
+          Children:
+          - Name: Source
+            Type: BaseDataVariableType
+            DataType: Number
+            ReferenceType: HasSource
+            Value: {"Type":11,"Body":0.0}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../Stop"
+          - Name: RawMin
+            Type: BaseDataVariableType
+            DataType: Double
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: 0.0
+          - Name: RawMax
+            Type: BaseDataVariableType
+            DataType: Double
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: 0.0
+          - Name: ScaledMin
+            Type: BaseDataVariableType
+            DataType: Double
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: 0.0
+          - Name: ScaledMax
+            Type: BaseDataVariableType
+            DataType: Double
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: 0.0
+      - Name: Pairs
+        Type: BaseObjectType
+        Children:
+        - Name: Pair
+          Type: ValueMapPair
+          Children:
+          - Name: Key
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+  - Name: Stop
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: On
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Start"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: Motor2
+  Id: g=33beacdcdfdb3cc8d430e8fed801a87e
+  Type: Motor
+  Children:
+  - Name: Start
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: KeyValueConverter1
+      Type: ValueMapConverter
+      Children:
+      - Name: Source
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: EngineeringUnitConverter1
+          Type: EUConverter
+          Children:
+          - Name: Source
+            Type: BaseDataVariableType
+            DataType: Number
+            ReferenceType: HasSource
+            Value: {"Type":11,"Body":0.0}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../Stop"
+      - Name: Pairs
+        Type: BaseObjectType
+        Children:
+        - Name: Pair
+          Type: ValueMapPair
+          Children:
+          - Name: Key
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+  - Name: Stop
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: On
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Start"
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Motor-02"
+- Name: Motor3
+  Id: g=b40ddb548c2de4d4335404f7ba1bb22b
+  Type: Motor
+  Children:
+  - Name: Start
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: KeyValueConverter1
+      Type: ValueMapConverter
+      Children:
+      - Name: Source
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: EngineeringUnitConverter1
+          Type: EUConverter
+          Children:
+          - Name: Source
+            Type: BaseDataVariableType
+            DataType: Number
+            ReferenceType: HasSource
+            Value: {"Type":11,"Body":0.0}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../Stop"
+      - Name: Pairs
+        Type: BaseObjectType
+        Children:
+        - Name: Pair
+          Type: ValueMapPair
+          Children:
+          - Name: Key
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+  - Name: Stop
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: On
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Start"
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Motor-03"
+- Name: Valve1
+  Id: g=7c2b255712cad01344389bb6759ada6b
+  Type: Valve
+  Children:
+  - Name: Open
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Open_Sts
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Open"
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Valve-1"
+- Name: Valve
+  Id: g=ad2f73c839bad4fb55d31bbcefd59226
+  Supertype: BaseObjectType
+  Children:
+  - Name: Open
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Open_Sts
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Open"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: Valve2
+  Id: g=d4aad4a642b2051bba103a43f97433cb
+  Type: Valve
+  Children:
+  - Name: Open
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Open_Sts
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Open"
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Valve-2"
+- Name: Valve3
+  Id: g=72632205e4ce32a18d4e362fba42da2d
+  Type: Valve
+  Children:
+  - Name: Open
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Open_Sts
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Open"
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Valve-3"
+  - Name: Object1
+    Type: BaseObjectType
+- File: Event/Event.yaml
+- File: DataLogger/DataLogger.yaml
+- File: Datalog_2/Datalog_2.yaml
+- File: Alarm/Alarm.yaml
+- File: eChartData/eChartData.yaml
+- Name: DLGTime
+  Id: g=67d64d9b32168a2bdc50c23b931038d4
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2024-05-09T00:00:00.0000000"
+- Name: Variable6
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "1601-01-01T00:00:00.0000000"
+- Name: Motor6
+  Id: g=8905eae0cecb95aa2bbe231217c9dbf5
+  Type: BaseObjectType
+  Children:
+  - Name: Temperature
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RPM
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: DL3_V1
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: DL3_V2
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

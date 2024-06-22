@@ -1,0 +1,15 @@
+Name: Alarm
+Type: FolderType
+Children:
+- Name: Alarm1
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Alarm2
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: Alarm3
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

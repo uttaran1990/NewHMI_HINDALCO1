@@ -1,0 +1,173 @@
+Name: Alarms
+Id: g=3293e7cd8de0bb06cc725e017a984470
+Type: AlarmsCategoryFolder
+Children:
+- Name: DigitalAlarm1
+  Id: g=bda83cebf149027b7be2444949d07855
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=2d1b6c23dfb81f3e5ec271c48bbbc653
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Id: g=60d31e47aa031a6724a30f35e6125028
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=22e9adeac9b745a1da32e5d1215e9716
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Alarm/Alarm1"
+      Children:
+      - Name: Mode
+        Id: g=c3c7a0a41e2c943b33728022d64b59e3
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=70677455696655003abaf6c0c9ceb7c9
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=25;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=83
+    Direction: Forward
+- Name: ExclusiveLevelAlarm1
+  Id: g=51b386499dfcebf081bf845b9871b011
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=ac6947fb2b13c07c5922a7d4d640ecf4
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=678af95f03c3c756a14bfd505bbf8d10
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Alarm/Alarm2"
+      Children:
+      - Name: Mode
+        Id: g=43ba6bf93156039cf83ed33e1ba555ff
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=7c7d59c4a0b141ec6c115173bd975c96
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=25;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=83
+    Direction: Forward
+  - Name: HighHighLimit
+    Id: g=21c4383138138a942b00eebad16fca84
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 50.0
+  - Name: HighLimit
+    Id: g=94ddd1f71119b90c9a8a5529609c4ed3
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 40.0
+  - Name: LowLimit
+    Id: g=a7f7bbfa3422a0d48da1fed5c27e92be
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 10.0
+  - Name: LowLowLimit
+    Id: g=c111dab691c5464e7e4b4787eae5558e
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 5.0
+  - Name: Message
+    Id: g=023014b443c84d8a247f8c06a3a3dc0f
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighHighStateMessage
+      Id: g=2d7530311e4dcfec5e3f190ed42e56ee
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"LHH"}
+    - Name: HighStateMessage
+      Id: g=b98d539aa304f2c56892848a2ab2c0d8
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"LH"}
+    - Name: LowStateMessage
+      Id: g=d10c3261d4857754fe9a4cbc39fd3ef0
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"L"}
+    - Name: LowLowStateMessage
+      Id: g=01f73c60b12e15fddcf71972a3cf9bae
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"LL"}
+- Name: NonExclusiveLevelAlarm1
+  Id: g=64d7cc3a9e26eee5faf8d8a8adb99139
+  Type: NonExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=c8a9e8e2af85cd3cb97abf941564fba9
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=a2c5d2afd4d75d350971f666109b05cc
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Alarm/Alarm3"
+      Children:
+      - Name: Mode
+        Id: g=1c71597593e77b3579543754f40cee73
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=9184cac877b66047a1e5ea3da550d575
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=25;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=83
+    Direction: Forward
+  - Name: HighHighLimit
+    Id: g=3cefdd38af438e22efcfd990abf985a7
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 90.0
+  - Name: HighLimit
+    Id: g=25e6acd04476f40bc406892036f792ed
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 80.0
